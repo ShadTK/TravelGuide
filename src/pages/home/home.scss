@@ -3,13 +3,55 @@ page-home {
 		background-image: url("../assets/bg_login.png");
 		background-repeat: no-repeat;
 		background-size:contain;
+		scroll-content {
+	        display: flex;
+	        flex-direction: column;
+	    }
+	    ion-grid {
+        padding: 0;
+        height: 100%;
+    }
+	    ion-row{
+	    	flex: 2;
+	    }
+	    app-title{
+	    	flex:8;
+	    }
+	    ion-item{
+	    	background-color: transparent;
+	    }
 	}
 
-	.button-login{
+	.app-body{
 		font-family:OpenSans;
 		font-size:12.8px;
 		color:#ffffff;
 		line-height:18px;
 		text-align:center;
+		text-input-placeholder-color:white;
 	}
+
+	.app-title{
+		font-family:OpenSans-Semibold;
+		font-size:22.18px;
+		color:#ffffff;
+		letter-spacing:2.77px;
+		line-height:31px;
+		text-align:center;
+
+	}
+	.text-input::-moz-placeholder {
+  color: white;
 }
+
+.text-input:-ms-input-placeholder {
+  color: white;
+}
+
+.text-input::-webkit-input-placeholder {
+  text-indent: 0;
+  color: white;
+}
+
+}
+
