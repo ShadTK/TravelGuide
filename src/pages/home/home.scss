@@ -23,7 +23,21 @@ page-home {
 	    }
 	}
 
+	.white-icon{
+		color : white;
+	}
 	.app-body{
+		font-family:OpenSans-Semibold;
+		font-size:12.8px;
+		color:#ffffff;
+		line-height:18px;
+		text-align:center;
+		vertical-align: middle;
+		text-input-placeholder-color:white;
+	}
+
+	.app-login{
+		top: 20px;
 		font-family:OpenSans;
 		font-size:12.8px;
 		color:#ffffff;
@@ -45,19 +59,27 @@ page-home {
 		vertical-align: middle;
 
 	}
+
+	.app-bottom{
+		font-family:SFUIText-Light;
+		font-size:7.99px;
+		color:#ffffff;
+		line-height:10px;
+		align-self: flex-end;
+		align-items: flex-end;
+		justify-content:flex-end;
+		text-align: center;
+	}
 	.text-input::-moz-placeholder {
 		color: white;
-		font-weight: bold;
-	}
+		}
 
 	.text-input:-ms-input-placeholder {
 	    color: white;
-	    font-weight: bold;
-	}
+	    }
 
 	.text-input::-webkit-input-placeholder {
 	    text-indent: 0;
-	    font-weight: bold;
 	    color: white;
 		}
 

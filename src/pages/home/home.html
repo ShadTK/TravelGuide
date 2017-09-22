@@ -9,7 +9,7 @@
 		<ion-col col-10>
 			<form>
 		<ion-item>
-			<ion-label><img src="../assets/ic_user.png"></ion-label>
+			<ion-label><ion-icon name="person" class="white-icon"></ion-icon></ion-label>
 			<ion-input placeholder="Username" type="text" name="Username" class="app-body"></ion-input>
 		</ion-item>
 		</form>
@@ -19,18 +19,33 @@
 		<ion-col col-10>
 			<form>
 		<ion-item>
-			<ion-label><img src="../assets/ic_password.png"></ion-label>
+			<ion-label><ion-icon name="lock" class="white-icon"></ion-icon></ion-label>
 			<ion-input  type="password" placeholder="Password"  name="Password" class="app-body"></ion-input>
 		</ion-item>
 		</form>
 	</ion-col>
 	</ion-row>
   	<ion-row>
-  		<ion-col col-10>
-			  <p>
-			  <button ion-button block outline color="light" class="app-body">Login</button>
-			  </p>
+  		<ion-col col-10  class="app-login">
+			  <button ion-button block outline color="light">Login</button>
 		</ion-col>
 	</ion-row>
+	<ion-row>
+  		<ion-col class="app-body">
+			  <br>
+			  <br>
+			  <b>Or use the Touch ID</b>
+		</ion-col>
+	</ion-row>
+	
    </ion-grid>
 </ion-content>
+<ion-footer no-border>
+	<ion-grid>
+		<ion-row style="bottom: 10px;">
+  		<ion-col class="app-bottom">
+			  <img src="../assets/logo_ak.png"><br>
+		</ion-col>
+	</ion-row>
+</ion-grid>
+</ion-footer>
