@@ -5,14 +5,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { Login } from '../pages/login/login';
 import { Destination } from '../pages/destination/destination';
 import { AuthService } from '../providers/auth-service';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
+    Login,
     Destination
   ],
   imports: [
@@ -22,7 +22,7 @@ import { AuthService } from '../providers/auth-service';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
+    Login,
     Destination
   ],
   providers: [

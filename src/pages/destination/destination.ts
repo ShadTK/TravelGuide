@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../../providers/auth-service'
-import { HomePage } from '../home/home'
+import { Login } from '../login/login'
 import { NavController,NavParams, AlertController } from 'ionic-angular';
 
 @Component({
@@ -18,7 +18,7 @@ export class Destination {
 	    
     logout() {
         this.authService.logout();
-        this.navCtrl.setRoot(HomePage);
+        this.navCtrl.setRoot(Login);
     };	    
 }
 
