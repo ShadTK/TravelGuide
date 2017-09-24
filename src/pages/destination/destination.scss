@@ -1,6 +1,46 @@
 page-destination {
-	ion-slide img {
-		height:100vh !important;
-		width: auto !important;
+	
+	.slides{
+	     background-color: blue;
+	     padding: 0;
+	  	 height: 100%;
 	}
+
+	.swiper-pagination-bullet-active {
+		opacity: 1;
+	}
+	.swiper-pagination-bullet {
+		background: white;
+	}
+	.toolbar-background{
+		background-color: transparent;
+	}
+	.app-title{
+		font-family:OpenSans-Semibold;
+		font-size:15.02px;
+		color:white;
+		letter-spacing:2.77px;
+		line-height:20px;
+		text-align:center;
+		top: 28px;
+	}
+
+	.Beaches{
+		background-image: url(../../assets/bg_beaches.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.Romantic{
+		background-image: url(../../assets/bg_romantic.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.Paradise{
+		background-image: url(../../assets/bg_paradise.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
 }	
