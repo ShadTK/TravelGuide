@@ -24,23 +24,52 @@ page-destination {
 		text-align:center;
 		top: 28px;
 	}
-
+	.app-bottom{
+		font-family:OpenSans;
+		font-size:12.79px;
+		color:#ffffff;
+		letter-spacing:0.21px;
+		line-height:18px;
+		text-align:center;
+		padding-bottom: 10%;
+		align-items: center;
+	}
 	.Beaches{
 		background-image: url(../../assets/bg_beaches.png);
 		background-repeat: no-repeat;
 		background-size: cover;
+		font-family:OpenSans;
+		font-size:27.29px;
+		color:#ffffff;
+		line-height:8.53px;
+		padding-top: 90%;
+		text-align:center;
+		
 	}
 
 	.Romantic{
 		background-image: url(../../assets/bg_romantic.png);
 		background-repeat: no-repeat;
 		background-size: cover;
+		font-family:OpenSans;
+		font-size:27.29px;
+		color:#ffffff;
+		line-height:8.53px;
+		padding-top: 90%;
+		text-align:center;
 	}
 
 	.Paradise{
 		background-image: url(../../assets/bg_paradise.png);
 		background-repeat: no-repeat;
 		background-size: cover;
+		font-family:OpenSans;
+		font-size:27.29px;
+		color:#ffffff;
+		line-height:8.53px;
+		padding-top: 90%;
+		text-align:center;
 	}
+
 
 }	
