@@ -8,14 +8,18 @@ import { NavController,NavParams, AlertController } from 'ionic-angular';
   templateUrl: 'destination.html',
 })
 export class Destination {
-
-  constructor(public navCtrl: NavController,
-  			  public navParams: NavParams,
-  			  public authService: AuthService,
-  			  public alertCtrl: AlertController) {
-	    
+  slides = [];
+    constructor(public navCtrl: NavController,
+        			  public navParams: NavParams,
+        			  public authService: AuthService,
+        			  public alertCtrl: AlertController) {
+      this.slides.push('../../assets/bg_beaches.png');
+      this.slides.push('../../assets/bg_romantic.png');
+      this.slides.push('../../assets/bg_paradise.png');      
 	}
 	    
+
+
     logout() {
         this.authService.logout();
         this.navCtrl.setRoot(Login);
