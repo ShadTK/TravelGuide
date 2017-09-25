@@ -1,33 +1,38 @@
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>Hotels-List</ion-title>
-  </ion-navbar>
+<!-- Logotype -->
+<ion-header class="app-title" no-border>
+	<ion-toolbar>
+		  	<ion-buttons left no-padding>
+		<button ion-button icon-only (click)="back();">
+			<img src="../../assets/bt_back.png">
+		</button>
+	</ion-buttons>
+			<b>Hotels-list</b>
+	<ion-buttons right no-padding>
+		<button ion-button icon-only (click)="back();">
+			<ion-icon name="pin" class="white-icon"></ion-icon>
+	</button>
+	</ion-buttons>
+	</ion-toolbar>
 
 </ion-header>
 
 
-<ion-content no-padding style="background-color: white">
+<ion-content no-padding style="background-color: white" [ngSwitch]="citySelected">
 
-  <ion-card>
-    <div class="image"><img src="../../assets/cel_hotelcancun1.png"/></div>
-    <div class="card-title">São Paulo</div>
-    <div class="card-subtitle">41 Listings</div>
-  </ion-card>
+<!-- As each bar is unique to the hotel, a switchcase was used to show the proper bar -->
 
-  <ion-card>
-    <img src="../../assets/cel_hotelcancun2.png"/>
-    <div class="card-title">Amsterdam</div>
-    <div class="card-subtitle">64 Listings</div>
-  </ion-card>
+	<ion-card *ngSwitchCase="'Cancun1'">
+		<canvas #barCanvas> </canvas>
+	</ion-card>
 
-  <ion-card>
-    <img src="../../assets/cel_hotelcancun3.png"/>
-    <div class="card-title">San Francisco</div>
-    <div class="card-subtitle">72 Listings</div>
-  </ion-card>
-
-s
+<!-- Creates the stack of cards leading to the hotel -->
+	<ion-card no-border *ngFor="let hotel of Hotels">
+	  	<ion-card-content no-padding (click)="goToHotelPage(hotel.hotelName)">
+		    <div style="margin: -5px; padding: 0px;"><img src="{{ hotel.image }}"/></div>
+		    <div class="card-title">{{hotel.hotelName}}</div>
+		    <div class="card-subtitle">{{hotel.pricing}}</div>
+		</ion-card-content>
+  	</ion-card>
 
 </ion-content>
 

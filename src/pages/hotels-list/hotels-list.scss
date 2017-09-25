@@ -1,29 +1,51 @@
 page-hotels-list {
+	/*header style*/
+	.toolbar-background{
+		background-color: #000000 ;
+	}
+	.white-icon{
+		color : white;
+	}
+	.app-title{
+	font-family:OpenSans-Semibold;
+	font-size:16.2px;
+	color:#ffffff;
+	line-height:22px;
+	text-align:center;
 
+	}
  ion-card {
     position: relative;
     text-align: center;
   }
-	#image > img{
+	.image > img{
 	width:100%;
 	height:100%;
 	padding:0px;
 }
   .card-title {
     position: absolute;
-    top: 36%;
-    font-size: 2.0em;
-    width: 100%;
-    font-weight: bold;
-    color: #fff;
+    top: 40%;
+    left: 26px;
+    font-family:AppleSystemUIFont;
+	font-size:17.06px;
+	color:#ffffff;
+	letter-spacing:0.14px;
+	line-height:8.53px;
+	text-align:left;
   }
 
   .card-subtitle {
     font-size: 1.0em;
     position: absolute;
-    top: 52%;
+    top: 55%;
+    left:26px;
     width: 100%;
-    color: #fff;
+    font-family:HelveticaNeue;
+	font-size:11.08px;
+	color:#ffffff;
+	line-height:8.53px;
+	text-align:left;
   }
 
 }
