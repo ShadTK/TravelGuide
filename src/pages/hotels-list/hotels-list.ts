@@ -14,6 +14,7 @@ export class HotelsList {
 	citySelected: any = 'Cancun1';
 	Hotels: {image:string, hotelName:string, pricing:string}[] = [];
 	names: any ;
+
 	goToHotelPage(hotelName){
 
 		console.log(hotelName);
@@ -21,15 +22,30 @@ export class HotelsList {
 
 	constructor(public navCtrl: NavController, public navParams: NavParams) {
 
-		this.Hotels = [{image:'../../assets/cel_hotelcancun1.png', hotelName:'Hyatt Zilara Cancun', pricing:'$89.00 per night'},
-		{image:'../../assets/cel_hotelcancun2.png', hotelName:"Moon Palace Golf", pricing:"$119.00 per night"},
-		{image:'../../assets/cel_hotelcancun3.png', hotelName:"Live Aqua Cancun", pricing:"$135.00 per night"}];
+        let city = this.navParams.get('city');
+        switch(city){
+            case "Noronha1":
+                        this.Hotels = [{image:'../../assets/cel_hotelcancun1.png', hotelName:'Hyatt Zilara Cancun', pricing:'$89.00 per night'},
+                                      {image:'../../assets/cel_hotelcancun2.png', hotelName:"Moon Palace Golf", pricing:"$119.00 per night"},
+                                      {image:'../../assets/cel_hotelcancun3.png', hotelName:"Live Aqua Cancun", pricing:"$135.00 per night"}];
+                        break;
+            case "Noronha2":
+                        this.Hotels = [{image:'../../assets/cel_hotelcancun1.png', hotelName:'Eon Paganini', pricing:'B100.000 per night'},
+                                      {image:'../../assets/cel_hotelcancun2.png', hotelName:"Varuna Swift Death", pricing:"B500.000 per night"},
+                                      {image:'../../assets/cel_hotelcancun3.png', hotelName:"Corvo the many faced", pricing:"B900.000 per night"}];
+                        break;
 
-		this.names = ['3', '4', '5']
-
+        }
+      
 	}
 
+    back(){
+        this.navCtrl.pop();
+    };
+
 	ionViewDidLoad() {
+
+
 
 		this.barChart = new Chart(this.barCanvas.nativeElement, {
  

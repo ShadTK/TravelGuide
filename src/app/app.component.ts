@@ -10,7 +10,7 @@ import { HotelsList } from '../pages/hotels-list/hotels-list';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HotelsList;
+  rootPage:any = CitiesBeaches;
 
 constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
   platform.ready().then(() => {
