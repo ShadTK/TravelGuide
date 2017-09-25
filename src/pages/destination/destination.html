@@ -1,13 +1,18 @@
 <!-- Logotype -->
 <ion-header class="app-title" no-border>
 	<ion-toolbar>
+		  	<ion-buttons left no-padding>
+		<button ion-button icon-only (click)="logout()">
+			<img src="../../assets/bt_back.png">
+		</button>
+	</ion-buttons>
 			<b>TRAVEL</b> GUIDE
 	</ion-toolbar>
 </ion-header>
 
 <!-- Sliders with destination pictures and text. To improve: Find a way to call CSS class through NgFor loops -->
 
-<ion-slides pager=true>
+<ion-slides pager=true loop=true>
 		<ion-slide class=Beaches>
 				Beaches
 		</ion-slide>
@@ -18,7 +23,7 @@
 				Paradise
 		</ion-slide>
 </ion-slides>
--->
+
 <!-- Button for selecting the city. alignment:center doesn't seem to work on ion-footer, so I had to use a grid. Seems a bit overkill, and I'm sure there are better solutions, but it will do for the time being.-->
 
 <ion-footer no-border>
@@ -27,7 +32,7 @@
             <ion-col col-3 no-padding>
             </ion-col>
             <ion-col col-6 no-padding>
-                <button ion-button block outline color="light">
+                <button ion-button block outline color="light" (click)="selectCity()">
 					View Cities
 				</button>
             </ion-col>

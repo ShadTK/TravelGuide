@@ -9,12 +9,21 @@ import { MyApp } from './app.component';
 import { Login } from '../pages/login/login';
 import { Destination } from '../pages/destination/destination';
 import { AuthService } from '../providers/auth-service';
+import { CitiesBeaches } from '../pages/cities-beaches/cities-beaches';
+import { CitiesRomantic } from '../pages/cities-romantic/cities-romantic';
+import { CitiesParadise } from '../pages/cities-paradise/cities-paradise';
+import { HotelsList } from '../pages/hotels-list/hotels-list';
+
 
 @NgModule({
   declarations: [
     MyApp,
     Login,
-    Destination
+    Destination,
+    CitiesBeaches,
+    CitiesRomantic,
+    CitiesParadise,
+    HotelsList
   ],
   imports: [
     BrowserModule,
@@ -25,7 +34,11 @@ import { AuthService } from '../providers/auth-service';
   entryComponents: [
     MyApp,
     Login,
-    Destination
+    Destination,
+    CitiesBeaches,
+    CitiesRomantic,
+    CitiesParadise,
+    HotelsList,
   ],
   providers: [
     StatusBar,
