@@ -1,18 +1,45 @@
-<!--
-  Generated template for the Hotel page.
+<ion-header class="app-title" no-border>
+	<ion-toolbar>
+		  	<ion-buttons left no-padding>
+		<button ion-button icon-only (click)="back();">
+			<img src="../../assets/bt_back.png">
+		</button>
+	</ion-buttons>
+			<b>Hotels-list</b>
+	<ion-buttons right no-padding>
+		<button ion-button icon-only (click)="back();">
+			<img src = "../../assets/bt_comments.png">
+	</button>
+	</ion-buttons>
+	</ion-toolbar>
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
 
-  <ion-navbar>
-    <ion-title>Hotel</ion-title>
-  </ion-navbar>
 
 </ion-header>
 
+<ion-grid no-padding style="height: 100%;">
+	<ion-row class="main-picture" no-padding>
+		<img src="../../assets/{{PictureSelected}}">
+	</ion-row>
+	<ion-row style="height: 10%" >
+		<ion-col col-2 *ngFor="let pictureList of PictureList" (click)="changeMainPicture(pictureList.picture)">
+			<img height="100%" src="../../assets/{{pictureList.picture}}"> 
+		</ion-col>
+	</ion-row>
+	<ion-row style="padding-top: 3%"> 
+		<ion-col col-1>
+		</ion-col>
+		<ion-col col-8 class="hotel-name">
+		<img src="../../assets/stars.png"><br>
+		<b>HotelInformation</b>
+		</ion-col>
+		<ion-col col-2>
+			<ion-buttons no-padding>
+			<div class="pricing">oh hell<br> yes</div>
+		</ion-buttons>
+		</ion-col>
+		<ion-col col-1>
+		</ion-col>
+	</ion-row>
+</ion-grid>
 
-<ion-content padding>
-
-</ion-content>

@@ -11,7 +11,7 @@ import { Destination } from '../pages/destination/destination';
 import { AuthService } from '../providers/auth-service';
 import { HotelsList } from '../pages/hotels-list/hotels-list';
 import { Cities } from '../pages/cities/cities';
-
+import { Hotel } from '../pages/hotel/hotel';
 
 @NgModule({
   declarations: [
@@ -20,6 +20,7 @@ import { Cities } from '../pages/cities/cities';
     Destination,
     HotelsList,
     Cities,
+    Hotel,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +34,7 @@ import { Cities } from '../pages/cities/cities';
     Destination,
     HotelsList,
     Cities,
+    Hotel,
   ],
   providers: [
     StatusBar,

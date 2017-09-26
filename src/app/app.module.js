@@ -18,6 +18,9 @@ import { CitiesBeaches } from '../pages/cities-beaches/cities-beaches';
 import { CitiesRomantic } from '../pages/cities-romantic/cities-romantic';
 import { CitiesParadise } from '../pages/cities-paradise/cities-paradise';
 import { HotelsList } from '../pages/hotels-list/hotels-list';
+import { Hotel } from '../pages/hotel/hotel';
+
+
 var AppModule = (function () {
     function AppModule() {
     }
@@ -32,7 +35,8 @@ AppModule = __decorate([
             CitiesBeaches,
             CitiesRomantic,
             CitiesParadise,
-            HotelsList
+            HotelsList,
+            Hotel
         ],
         imports: [
             BrowserModule,
@@ -48,6 +52,7 @@ AppModule = __decorate([
             CitiesRomantic,
             CitiesParadise,
             HotelsList,
+            Hotel
         ],
         providers: [
             StatusBar,
