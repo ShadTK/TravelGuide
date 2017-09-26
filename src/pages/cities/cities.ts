@@ -4,9 +4,6 @@ import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
 import { HotelsList } from '../hotels-list//hotels-list';
 
-//I'll admit, i'm not particularly proud of this page, however i couldn't find the time to properly refactor it.
-//On the other had, at least I didn't have to make 3 separate pages to do this.
-
 @Component({
   selector: 'page-cities',
   templateUrl: 'cities.html',

@@ -1,7 +1,9 @@
 page-cities {
 /* CSS information for slide background color and Pager color*/
 	.slides{
-	     background-color: white;
+	    background-image: url("../assets/bg_login.png");
+		background-repeat: no-repeat;
+		background-size:contain;
 	     padding: 0;
 	  	 height: 100%;
 	}

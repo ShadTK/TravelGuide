@@ -2,7 +2,9 @@ page-destination {
 
 	/* CSS information for slide background color and Pager color*/
 	.slides{
-	     background-color: blue;
+	    background-image: url("../assets/bg_login.png");
+		background-repeat: no-repeat;
+		background-size:contain;
 	     padding: 0;
 	  	 height: 100%;
 	}

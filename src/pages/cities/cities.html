@@ -20,7 +20,7 @@ The workaround found requires usage of google chrome development mode.
 Another note: Although NgFor can be used to generate sliders, the slide behavior presents glitches when generated on that matter. Further investigation of the issue is required to understand the problem. For the time being, in the interest of saving time and not creating a page for each destination, a switch case will be used.
 
 -->
-<ion-slides pager=true loop=true [ngSwitch]="Destinations">
+<ion-slides pager=true loop=true effect="coverflow" [ngSwitch]="Destinations">
 		<ion-slide class=Noronha1 *ngSwitchCase="'Beaches'">
 			<ion-row style="padding-left:35px; padding-right: 15px; padding-bottom: 5px;color:#b9b9b9; font-family:OpenSans-Bold; font-size:10.23px; line-height:21.32px;">
 				BRAZIL
