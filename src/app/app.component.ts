@@ -7,13 +7,14 @@ import { HotelsList } from '../pages/hotels-list/hotels-list';
 import { Cities } from '../pages/cities/cities';
 import { Login } from '../pages/login/login';
 import { Hotel } from '../pages/hotel/hotel';
+import { Comments } from '../pages/comments/comments';
 
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = Hotel;
+  rootPage:any = Comments;
 
 constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
   platform.ready().then(() => {

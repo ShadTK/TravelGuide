@@ -1,0 +1,42 @@
+<ion-header class="app-title" no-border>
+	<ion-toolbar>
+		  	<ion-buttons left no-padding>
+		<button ion-button icon-only (click)="back();">
+			<img src="../../assets/bt_back.png">
+		</button>
+	</ion-buttons>
+			<b>Comments</b>
+	</ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+
+<!-- <ion-list>
+  <button ion-item *ngFor="let comment of Comments" (click)="itemSelected(item)">
+  	<span class="comment-date">{{ comment.date }}</span>
+    <span class="comment-text">{{ comment.text }}</span>
+  </button>  
+</ion-list>
+-->
+</ion-content>
+
+<!-- When Ionic-input is used in a footer, the keyboard overlaps the input.
+	https://github.com/ionic-team/ionic/issues/7149
+hence, used a normal input as suggested in the discussion workaround -->
+
+<ion-footer no-border style="background-color: #001c25;">
+    <ion-grid style="height: 100%; justify-content: space-evenly;">
+        <ion-row no-padding no-margin >
+            <ion-col col-12 no-padding>
+            	<form >
+            		<input type="text" name="title" placeholder="Type in your comment" class="comment-style" ngModel required>
+                <button class="submit-style">
+					SEND
+				</button>
+			</form>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-footer>

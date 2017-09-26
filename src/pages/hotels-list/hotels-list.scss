@@ -1,7 +1,11 @@
 page-hotels-list {
 	/*header style*/
 	.toolbar-background{
-		background-color: #000000 ;
+		background-image: url("../../assets/navbar.png");
+		background-repeat: no-repeat;
+		background-size:cover;
+	    padding: 0;
+	  	height: 100%;
 	}
 	.white-icon{
 		color : white;

@@ -1,0 +1,42 @@
+page-comments {
+
+	.toolbar-background{
+		background-image: url("../../assets/navbar.png");
+		background-repeat: no-repeat;
+		background-size:cover;
+	    padding: 0;
+	  	height: 100%;
+	}
+	.white-icon{
+		color : white;
+	}
+	.app-title{
+		font-family:OpenSans-Semibold;
+		font-size:16.2px;
+		color:#ffffff;
+		line-height:22px;
+		text-align:center;
+	}
+	.comment-style{
+		background-color: transparent;
+		border: none;
+		padding-left: 5%;
+		width: 80%;
+		font-family:OpenSans-Light;
+		font-size:11.47px;
+		color:#ffffff;
+		line-height:18px;
+		text-align:left;
+	}
+	.submit-style{
+		background-color: transparent;
+		align-items: flex-end;
+		font-family:Avenir-Medium;
+		font-size:9.47px;
+		color:#ffffff;
+		line-height:18px;
+	}
+
+
+
+}
