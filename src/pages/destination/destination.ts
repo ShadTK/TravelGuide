@@ -4,9 +4,8 @@ import { Login } from '../login/login'
 import { NavController,NavParams, AlertController } from 'ionic-angular';
 import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
-import { CitiesBeaches } from '../cities-beaches/cities-beaches'
-import { CitiesRomantic } from '../cities-romantic/cities-romantic'
-import { CitiesParadise } from '../cities-paradise/cities-paradise'
+import { Cities } from '../cities/cities'
+
 
 @Component({
   selector: 'page-destination',
@@ -35,14 +34,21 @@ export class Destination {
       
     selectCity(){
       switch(this.slides.getActiveIndex()) {
+    case 0: 
+        this.navCtrl.push(Cities, {destination: 'Paradise'});
+        break;
     case 1:
-        this.navCtrl.push(CitiesBeaches);
+        this.navCtrl.push(Cities, {destination: 'Beaches'});
         break;
     case 2:
-        this.navCtrl.push(CitiesRomantic);
+        this.navCtrl.push(Cities, {destination: 'Romantic'});
         break;
     case 3:
-        this.navCtrl.push(CitiesParadise);
+        this.navCtrl.push(Cities, {destination: 'Paradise'});
+        break;
+    case 4:
+        this.navCtrl.push(Cities, {destination: 'Beaches'})
+        break;
 }
     }
 

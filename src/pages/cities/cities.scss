@@ -1,5 +1,5 @@
-page-cities-paradise {
-	/* CSS information for slide background color and Pager color*/
+page-cities {
+/* CSS information for slide background color and Pager color*/
 	.slides{
 	     background-color: white;
 	     padding: 0;
@@ -22,7 +22,6 @@ page-cities-paradise {
 		color:#ffffff;
 		line-height:22px;
 		text-align:center;
-		top: 28px;
 	}
 	.app-bottom{
 		font-family:OpenSans;
@@ -35,6 +34,30 @@ page-cities-paradise {
 		align-items: center;
 	}
 	/*Font information for travel type*/
+	.Noronha1{
+		background-image: url(../../assets/bg_fernandodenoronha1.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-family:OpenSans;
+		font-size:27.29px;
+		color:#ffffff;
+		line-height:8.53px;
+		padding-top: 90%;
+		text-align:left;
+		
+	}
+
+	.Noronha2{
+		background-image: url(../../assets/bg_fernandodenoronha2.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-family:OpenSans;
+		font-size:27.29px;
+		color:#ffffff;
+		line-height:8.53px;
+		padding-top: 90%;
+		text-align:left;
+	}
 	.Cancun1{
 		background-image: url(../../assets/bg_cancun1.png);
 		background-repeat: no-repeat;
@@ -59,6 +82,28 @@ page-cities-paradise {
 		padding-top: 90%;
 		text-align:left;
 	}
+	.Paris1{
+		background-image: url(../../assets/bg_paris1.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-family:OpenSans;
+		font-size:27.29px;
+		color:#ffffff;
+		line-height:8.53px;
+		padding-top: 90%;
+		text-align:left;
+		
+	}
 
-
+	.Paris2{
+		background-image: url(../../assets/bg_paris2.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-family:OpenSans;
+		font-size:27.29px;
+		color:#ffffff;
+		line-height:8.53px;
+		padding-top: 90%;
+		text-align:left;
+	}
 }

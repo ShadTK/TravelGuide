@@ -1,0 +1,108 @@
+<!-- Logotype -->
+<ion-header class="app-title" no-border>
+	<ion-toolbar>
+		  	<ion-buttons left no-padding>
+		<button ion-button icon-only (click)="back();">
+			<img src="../../assets/bt_back.png">
+		</button>
+	</ion-buttons>
+			<b>Destinations</b>
+	</ion-toolbar>
+</ion-header>
+<!-- Sliders with destination pictures and text. 
+For the record: There is a know bug with calling a page with a slider on top with another page with a slider:
+
+https://github.com/ionic-team/ionic/issues/10101
+
+When previewing the page on desktops. It works fine on mobile emulation.
+The workaround found requires usage of google chrome development mode.
+
+Another note: Although NgFor can be used to generate sliders, the slide behavior presents glitches when generated on that matter. Further investigation of the issue is required to understand the problem. For the time being, in the interest of saving time and not creating a page for each destination, a switch case will be used.
+
+-->
+<ion-slides pager=true loop=true [ngSwitch]="Destinations">
+		<ion-slide class=Noronha1 *ngSwitchCase="'Beaches'">
+			<ion-row style="padding-left:35px; padding-right: 15px; padding-bottom: 5px;color:#b9b9b9; font-family:OpenSans-Bold; font-size:10.23px; line-height:21.32px;">
+				BRAZIL
+			</ion-row>
+			<ion-row style="padding-left:35px; padding-right: 15px; font-size:27.29px; line-height:8.53px; padding-bottom: 11px;">
+				Fernando de Noronha
+			</ion-row>
+			<ion-row style="text-align:left; padding-left:35px; padding-right: 15px;color:#e6e9ed;font-size:12.79px;; line-height:23.88px;">
+				With golden sand, turquoise sea and a ruby-like sunset, the trip to these beaches is as precious as a rare gem.
+			</ion-row>
+		</ion-slide>
+		<ion-slide class=Noronha2 *ngSwitchCase="'Beaches'">
+			<ion-row style="padding-left:35px; padding-right: 15px; padding-bottom: 5px; font-family:OpenSans-Bold; font-size:10.23px; line-height:21.32px;">
+				BRAZIL
+			</ion-row>
+			<ion-row style="padding-left:35px; padding-right: 15px; font-size:27.29px; line-height:8.53px; padding-bottom: 11px;">
+				Fernando de Noronha2
+			</ion-row>
+			<ion-row style="text-align:left; padding-left:35px; padding-right: 15px;color:#e6e9ed;font-size:12.79px;; line-height:23.88px;">
+				A lively place filled with good food, great music, and incredble culture that you will never forget.
+			</ion-row>
+		</ion-slide>
+		<!--Paradise -->
+		<ion-slide class=Cancun1 *ngSwitchCase="'Paradise'">
+			<ion-row style="padding-left:35px; padding-right: 15px; padding-bottom: 5px;color:#b9b9b9; font-family:OpenSans-Bold; font-size:10.23px; line-height:21.32px;">
+				MEXICO
+			</ion-row>
+			<ion-row style="padding-left:35px; padding-right: 15px; font-size:27.29px; line-height:8.53px; padding-bottom: 11px;">
+				Cancun
+			</ion-row>
+			<ion-row style="text-align:left; padding-left:35px; padding-right: 15px;color:#e6e9ed;font-size:12.79px;; line-height:23.88px;">
+				One of America's most preferred vacation destinations - and there are several reasons why.
+			</ion-row>
+		</ion-slide>
+		<ion-slide class=Cancun2 *ngSwitchCase="'Paradise'">
+			<ion-row style="padding-left:35px; padding-right: 15px; padding-bottom: 5px; font-family:OpenSans-Bold; font-size:10.23px; line-height:21.32px;">
+				MEXICO
+			</ion-row>
+			<ion-row style="padding-left:35px; padding-right: 15px; font-size:27.29px; line-height:8.53px; padding-bottom: 11px;">
+				Cancun2
+			</ion-row>
+			<ion-row style="text-align:left; padding-left:35px; padding-right: 15px;color:#e6e9ed;font-size:12.79px;; line-height:23.88px;">
+				America's second most preferred vacation destination - but with enough charm to be even more memorable then the first.
+			</ion-row>
+		</ion-slide>
+		<ion-slide class=Paris1 *ngSwitchCase="'Romantic'">
+			<ion-row style="padding-left:35px; padding-right: 15px; padding-bottom: 5px;color:#b9b9b9; font-family:OpenSans-Bold; font-size:10.23px; line-height:21.32px;">
+				FRANCE
+			</ion-row>
+			<ion-row style="padding-left:35px; padding-right: 15px; font-size:27.29px; line-height:8.53px; padding-bottom: 11px;">
+				Paris
+			</ion-row>
+			<ion-row style="text-align:left; padding-left:35px; padding-right: 15px;color:#e6e9ed;font-size:12.79px;; line-height:23.88px;">
+				The beautiful french capital, vibrant, charming, and incredbly romantic;
+			</ion-row>
+		</ion-slide>
+		<ion-slide class=Paris2 *ngSwitchCase="'Romantic'">
+			<ion-row style="padding-left:35px; padding-right: 15px; padding-bottom: 5px; font-family:OpenSans-Bold; font-size:10.23px; line-height:21.32px;">
+				FRANCE
+			</ion-row>
+			<ion-row style="padding-left:35px; padding-right: 15px; font-size:27.29px; line-height:8.53px; padding-bottom: 11px;">
+				Paris2
+			</ion-row>
+			<ion-row style="text-align:left; padding-left:35px; padding-right: 15px;color:#e6e9ed;font-size:12.79px;; line-height:23.88px;">
+				Just like paris, charming and rich in culture, but much more affordable.
+			</ion-row>
+		</ion-slide>
+</ion-slides>
+
+<ion-footer no-border>
+    <ion-grid>
+
+        <ion-row no-padding no-margin class="app-bottom">
+            <ion-col col-3 no-padding>
+            </ion-col>
+            <ion-col col-6 no-padding>
+                <button ion-button block outline color="light" (click)="selectCity()">
+					View Hotels
+				</button>
+            </ion-col>
+            <ion-col col-3 no-padding>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-footer>

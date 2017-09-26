@@ -9,10 +9,8 @@ import { MyApp } from './app.component';
 import { Login } from '../pages/login/login';
 import { Destination } from '../pages/destination/destination';
 import { AuthService } from '../providers/auth-service';
-import { CitiesBeaches } from '../pages/cities-beaches/cities-beaches';
-import { CitiesRomantic } from '../pages/cities-romantic/cities-romantic';
-import { CitiesParadise } from '../pages/cities-paradise/cities-paradise';
 import { HotelsList } from '../pages/hotels-list/hotels-list';
+import { Cities } from '../pages/cities/cities';
 
 
 @NgModule({
@@ -20,10 +18,8 @@ import { HotelsList } from '../pages/hotels-list/hotels-list';
     MyApp,
     Login,
     Destination,
-    CitiesBeaches,
-    CitiesRomantic,
-    CitiesParadise,
-    HotelsList
+    HotelsList,
+    Cities,
   ],
   imports: [
     BrowserModule,
@@ -35,10 +31,8 @@ import { HotelsList } from '../pages/hotels-list/hotels-list';
     MyApp,
     Login,
     Destination,
-    CitiesBeaches,
-    CitiesRomantic,
-    CitiesParadise,
     HotelsList,
+    Cities,
   ],
   providers: [
     StatusBar,
