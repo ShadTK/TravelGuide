@@ -31,15 +31,45 @@
 		</ion-col>
 		<ion-col col-8 class="hotel-name">
 		<img src="../../assets/stars.png"><br>
-		<b>HotelInformation</b>
+		<b>{{HotelName}}</b>
 		</ion-col>
 		<ion-col col-2>
-			<ion-buttons no-padding>
-			<div class="pricing">oh hell<br> yes</div>
-		</ion-buttons>
+		<div class="pricing-div"><span class="pricing1">${{HotelPrice}}</span><br><span class="pricing2">per night</span></div>
 		</ion-col>
 		<ion-col col-1>
 		</ion-col>
 	</ion-row>
+	<hr>
+	<ion-row class="description">
+		<div style="padding-right: 10%; padding-left: 10%">
+			{{HotelDescription}}
+		</div>
+	</ion-row>
 </ion-grid>
 
+<ion-footer no-border>
+    <ion-grid>
+    	<ion-row no-padding no-margin class="app-bottom">
+            <ion-col col-1 no-padding>
+            </ion-col>
+            <ion-col col-10 no-padding class="description">
+                <b>SERVICES</b> <br>
+                {{HotelService}}
+            </ion-col>
+            <ion-col col-1 no-padding>
+            </ion-col>
+        </ion-row>
+       <hr>
+        <ion-row no-padding no-margin class="app-bottom">
+            <ion-col col-1 no-padding>
+            </ion-col>
+            <ion-col col-10 no-padding>
+                <button ion-button block outline class="book-now" color="button">
+					Book Now
+				</button>
+            </ion-col>
+            <ion-col col-1 no-padding>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-footer>
