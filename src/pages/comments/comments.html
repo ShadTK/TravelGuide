@@ -13,12 +13,27 @@
 
 <ion-content>
 
-<!-- <ion-list>
-  <button ion-item *ngFor="let comment of Comments" (click)="itemSelected(item)">
+	<ion-refresher (ionRefresh)="doRefresh($event)">
+		<ion-refresher-content>
+		</ion-refresher-content>
+	</ion-refresher>
+
+			<ion-list inset >
+				<ion-item *ngFor="let comment of Comments">
+				<span class="comment-date">{{comment.date}}</span><br>
+				<span class="comment-text">{{comment.text}}</span>
+				</ion-item>
+			</ion-list>
+	
+
+<!--
+<ion-list>
+  <ion-item *ngFor="let comment of Comments" (click)="itemSelected(item)">
   	<span class="comment-date">{{ comment.date }}</span>
     <span class="comment-text">{{ comment.text }}</span>
-  </button>  
+  </ion-item>  
 </ion-list>
+
 -->
 </ion-content>
 
