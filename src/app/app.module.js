@@ -21,6 +21,9 @@ import { HotelsList } from '../pages/hotels-list/hotels-list';
 import { Hotel } from '../pages/hotel/hotel';
 import { Geolocation } from '@ionic-native/geolocation';
 
+angular.module('ionic.example', ['ionic'])
+.controller('MapCtrl', function($scope, $ionicLoading, $compile)
+
 var AppModule = (function () {
     function AppModule() {
     }
