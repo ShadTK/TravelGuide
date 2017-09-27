@@ -13,13 +13,9 @@
 
 <ion-content>
 
-	<ion-refresher (ionRefresh)="doRefresh($event)">
-		<ion-refresher-content>
-		</ion-refresher-content>
-	</ion-refresher>
 
 			<ion-list inset >
-				<ion-item *ngFor="let comment of Comments">
+				<ion-item *ngFor="let comment of CommentTexts">
 				<span class="comment-date">{{comment.date}}</span><br>
 				<span class="comment-text">{{comment.text}}</span>
 				</ion-item>
@@ -45,9 +41,9 @@ hence, used a normal input as suggested in the discussion workaround -->
     <ion-grid style="height: 100%; justify-content: space-evenly;">
         <ion-row no-padding no-margin >
             <ion-col col-12 no-padding>
-            	<form >
-            		<input type="text" name="title" placeholder="Type in your comment" class="comment-style" ngModel required>
-                <button class="submit-style">
+            	<form (ngSubmit)="onAddComment(f.value)" #f="ngForm" >
+            		<input type="text" name="text" placeholder="Type in your comment" class="comment-style" ngModel required>
+                <button class="submit-style" [disabled]="!f.valid">
 					SEND
 				</button>
 			</form>
