@@ -14,7 +14,7 @@ export class HotelsList {
 	@ViewChild('barCanvas') barCanvas;
 
 	barChart: any;
-	citySelected: any = 'Cancun1';
+	citySelected: any;
 	Hotels: {image:string, hotelName:string, pricing:string}[] = [];
 	names: any ;
 
