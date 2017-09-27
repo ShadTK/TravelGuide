@@ -66,7 +66,7 @@ export class HotelsList {
     };
 
     maps(){
-        this.navCtrl.push(HotelsMap, this.citySelected);
+        this.navCtrl.push(HotelsMap, {city:this.citySelected});
     };
 
 	ionViewDidLoad() {
