@@ -13,6 +13,7 @@ import { HotelsList } from '../pages/hotels-list/hotels-list';
 import { Cities } from '../pages/cities/cities';
 import { Hotel } from '../pages/hotel/hotel';
 import { Comments } from '../pages/comments/comments';
+import { HotelsMap } from '../pages/hotels-map/hotels-map'
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { Comments } from '../pages/comments/comments';
     Cities,
     Hotel,
     Comments,
+    HotelsMap,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +40,7 @@ import { Comments } from '../pages/comments/comments';
     Cities,
     Hotel,
     Comments,
+    HotelsMap,
   ],
   providers: [
     StatusBar,

@@ -19,7 +19,7 @@ import { CitiesRomantic } from '../pages/cities-romantic/cities-romantic';
 import { CitiesParadise } from '../pages/cities-paradise/cities-paradise';
 import { HotelsList } from '../pages/hotels-list/hotels-list';
 import { Hotel } from '../pages/hotel/hotel';
-
+import { Geolocation } from '@ionic-native/geolocation';
 
 var AppModule = (function () {
     function AppModule() {
@@ -58,7 +58,8 @@ AppModule = __decorate([
             StatusBar,
             SplashScreen,
             { provide: ErrorHandler, useClass: IonicErrorHandler },
-            AuthService
+            AuthService,
+            Geolocation,
         ]
     })
 ], AppModule);
