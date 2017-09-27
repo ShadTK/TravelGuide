@@ -1,20 +1,17 @@
 <ion-header class="app-title" no-border>
 	<ion-toolbar>
-		  	<ion-buttons left no-padding>
-		<button ion-button icon-only (click)="back();">
-			<img src="../../assets/bt_back.png">
-		</button>
-	</ion-buttons>
-			<b>Hotels-list</b>
-	<ion-buttons right no-padding>
-		<button ion-button icon-only (click)="comments();">
-			<img src = "../../assets/bt_comments.png">
-	</button>
-	</ion-buttons>
+		<ion-buttons left no-padding>
+			<button ion-button icon-only (click)="back();">
+				<img src="../../assets/bt_back.png">
+			</button>
+		</ion-buttons>
+			<b>Hotel</b>
+		<ion-buttons right no-padding>
+			<button ion-button icon-only (click)="comments();">
+				<img src = "../../assets/bt_comments.png">
+			</button>
+		</ion-buttons>
 	</ion-toolbar>
-
-
-
 </ion-header>
 
 <ion-grid no-padding style="height: 100%;">
@@ -22,7 +19,8 @@
 		<img src="../../assets/{{PictureSelected}}">
 	</ion-row>
 	<ion-row style="height: 10%" >
-		<ion-col col-2 *ngFor="let pictureList of PictureList" (click)="changeMainPicture(pictureList.picture)">
+		<ion-col col-2 *ngFor="let pictureList of PictureList" 
+		(click)="changeMainPicture(pictureList.picture)">
 			<img height="100%" src="../../assets/{{pictureList.picture}}"> 
 		</ion-col>
 	</ion-row>
@@ -30,16 +28,17 @@
 		<ion-col col-1>
 		</ion-col>
 		<ion-col col-8 class="hotel-name">
-		<img src="../../assets/stars.png"><br>
-		<b>{{HotelName}}</b>
+			<img src="../../assets/stars.png"><br>
+			<b>{{HotelName}}</b>
 		</ion-col>
 		<ion-col col-2>
-		<div class="pricing-div"><span class="pricing1">${{HotelPrice}}</span><br><span class="pricing2">per night</span></div>
+			<div class="pricing-div"><span class="pricing1">${{HotelPrice}}</span><br>
+			<span class="pricing2">per night</span></div>
 		</ion-col>
 		<ion-col col-1>
 		</ion-col>
 	</ion-row>
-	<hr>
+		<hr>
 	<ion-row class="description">
 		<div style="padding-right: 10%; padding-left: 10%">
 			{{HotelDescription}}

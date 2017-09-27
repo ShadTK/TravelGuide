@@ -14,7 +14,7 @@ import { HotelsMap } from '../pages/hotels-map/hotels-map'
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HotelsMap;
+  rootPage:any = Login;
 
 constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
   platform.ready().then(() => {

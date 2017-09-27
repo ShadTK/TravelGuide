@@ -16,8 +16,208 @@ export class Hotel {
 	HotelService: string;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
-  	    let hotel = "Live Aqua Cancun"   //this.navParams.get('hotel');
+  	    let hotel = this.navParams.get('hotel');
+        console.log(hotel);
         switch(hotel){
+
+
+            //Noronha1 Hotels
+
+            case "Hotel da Palmeiras":
+                        this.PictureList = [{picture:'photo_hotelfernando1_A.png'},
+                                            {picture:'photo_hotelfernando1_B.png'},
+                                            {picture:'photo_hotelfernando1_A.png'},
+                                            {picture:'photo_hotelfernando1_B.png'},
+                                            {picture:'photo_hotelfernando1_A.png'},
+                                            {picture:'photo_hotelfernando1_B.png'},
+                                                                                    ];
+                        this.HotelName = hotel;
+                        this.HotelPrice = "89";
+                        this.HotelDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+                        this.HotelService = "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry";
+                        this.PictureSelected = "photo_hotelfernando1_A.png";                                         
+                        break;
+            case "Hotel Royal dusxiq":
+                        this.PictureList = [{picture:'photo_hotelfernando2_A.png'},
+                                            {picture:'photo_hotelfernando2_B.png'},
+                                            {picture:'photo_hotelfernando2_A.png'},
+                                            {picture:'photo_hotelfernando2_B.png'},
+                                            {picture:'photo_hotelfernando2_A.png'},
+                                            {picture:'photo_hotelfernando2_B.png'},
+                                            ];
+                        
+                        this.HotelName = hotel;
+                        this.HotelPrice = "119";
+                        this.HotelDescription = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
+                        this.HotelService = "Room Service | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ;
+                                                            
+
+                        this.PictureSelected = 'photo_hotelfernando2_A.png';
+                        break;
+            case "O bom da cama":
+                        this.PictureList = [{picture:'photo_hotelfernando3_A.png'},
+                                            {picture:'photo_hotelfernando3_B.png'},
+                                            {picture:'photo_hotelfernando3_A.png'},
+                                            {picture:'photo_hotelfernando3_B.png'},
+                                            {picture:'photo_hotelfernando3_A.png'},
+                                            {picture:'photo_hotelfernando3_B.png'},
+                                            ];
+                        this.HotelName = hotel,
+                        this.HotelPrice = "135";
+                        this.HotelDescription = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.";
+                        this.HotelService = "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ;
+                        this.PictureSelected = 'photo_hotelfernando3_A.png';
+
+                        break;
+
+            //Noronha2 Hotels
+
+            case "Eon Paganini":
+                        this.PictureList = [{picture:'photo_hotelfernando1_A.png'},
+                                            {picture:'photo_hotelfernando1_B.png'},
+                                            {picture:'photo_hotelfernando1_A.png'},
+                                            {picture:'photo_hotelfernando1_B.png'},
+                                            {picture:'photo_hotelfernando1_A.png'},
+                                            {picture:'photo_hotelfernando1_B.png'},
+                                                                                    ];
+                        this.HotelName = hotel;
+                        this.HotelPrice = "$100";
+                        this.HotelDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+                        this.HotelService = "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry";
+                        this.PictureSelected = "photo_hotelfernando1_A.png";                                         
+                        break;
+            case "Varuna Hotel":
+                        this.PictureList = [{picture:'photo_hotelfernando2_A.png'},
+                                            {picture:'photo_hotelfernando2_B.png'},
+                                            {picture:'photo_hotelfernando2_A.png'},
+                                            {picture:'photo_hotelfernando2_B.png'},
+                                            {picture:'photo_hotelfernando2_A.png'},
+                                            {picture:'photo_hotelfernando2_B.png'},
+                                            ];
+                        
+                        this.HotelName = hotel;
+                        this.HotelPrice = "500";
+                        this.HotelDescription = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
+                        this.HotelService = "Room Service | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ;
+                                                            
+
+                        this.PictureSelected = 'photo_hotelfernando2_A.png';
+                        break;
+            case "Parada do Corvo":
+                        this.PictureList = [{picture:'photo_hotelfernando3_A.png'},
+                                            {picture:'photo_hotelfernando3_B.png'},
+                                            {picture:'photo_hotelfernando3_A.png'},
+                                            {picture:'photo_hotelfernando3_B.png'},
+                                            {picture:'photo_hotelfernando3_A.png'},
+                                            {picture:'photo_hotelfernando3_B.png'},
+                                            ];
+                        this.HotelName = hotel,
+                        this.HotelPrice = "900";
+                        this.HotelDescription = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.";
+                        this.HotelService = "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ;
+                        this.PictureSelected = 'photo_hotelfernando3_A.png';
+
+                        break;
+            //Paris1 Hotels
+
+            case "Caroussel Hotel":
+                        this.PictureList = [{picture:'photo_hotelparis1_A.png'},
+                                            {picture:'photo_hotelparis1_B.png'},
+                                            {picture:'photo_hotelparis1_A.png'},
+                                            {picture:'photo_hotelparis1_B.png'},
+                                            {picture:'photo_hotelparis1_A.png'},
+                                            {picture:'photo_hotelparis1_B.png'},
+                                                                                    ];
+                        this.HotelName = hotel;
+                        this.HotelPrice = "100";
+                        this.HotelDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+                        this.HotelService = "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry";
+                        this.PictureSelected = "photo_hotelparis1_A.png";                                         
+                        break;
+            case "Canterlot Repouse":
+                        this.PictureList = [{picture:'photo_hotelparis2_A.png'},
+                                            {picture:'photo_hotelparis2_B.png'},
+                                            {picture:'photo_hotelparis2_A.png'},
+                                            {picture:'photo_hotelparis2_B.png'},
+                                            {picture:'photo_hotelparis2_A.png'},
+                                            {picture:'photo_hotelparis2_B.png'},
+                                            ];
+                        
+                        this.HotelName = hotel;
+                        this.HotelPrice = "500";
+                        this.HotelDescription = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
+                        this.HotelService = "Room Service | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ;
+                                                            
+
+                        this.PictureSelected = 'photo_hotelparis2_A.png';
+                        break;
+            case "Lariatt for you":
+                        this.PictureList = [{picture:'photo_hotelparis3_A.png'},
+                                            {picture:'photo_hotelparis3_B.png'},
+                                            {picture:'photo_hotelparis3_A.png'},
+                                            {picture:'photo_hotelparis3_B.png'},
+                                            {picture:'photo_hotelparis3_A.png'},
+                                            {picture:'photo_hotelparis3_B.png'},
+                                            ];
+                        this.HotelName = hotel,
+                        this.HotelPrice = "900";
+                        this.HotelDescription = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.";
+                        this.HotelService = "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ;
+                        this.PictureSelected = 'photo_hotelparis3_A.png';
+
+                        break;
+
+            //Paris2 Hotels
+
+            case "Centr Levo":
+                        this.PictureList = [{picture:'photo_hotelparis1_A.png'},
+                                            {picture:'photo_hotelparis1_B.png'},
+                                            {picture:'photo_hotelparis1_A.png'},
+                                            {picture:'photo_hotelparis1_B.png'},
+                                            {picture:'photo_hotelparis1_A.png'},
+                                            {picture:'photo_hotelparis1_B.png'},
+                                                                                    ];
+                        this.HotelName = hotel;
+                        this.HotelPrice = "150";
+                        this.HotelDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+                        this.HotelService = "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry";
+                        this.PictureSelected = "photo_hotelparis1_A.png";                                         
+                        break;
+            case "Caz vuola lon ge":
+                        this.PictureList = [{picture:'photo_hotelparis2_A.png'},
+                                            {picture:'photo_hotelparis2_B.png'},
+                                            {picture:'photo_hotelparis2_A.png'},
+                                            {picture:'photo_hotelparis2_B.png'},
+                                            {picture:'photo_hotelparis2_A.png'},
+                                            {picture:'photo_hotelparis2_B.png'},
+                                            ];
+                        
+                        this.HotelName = hotel;
+                        this.HotelPrice = "300";
+                        this.HotelDescription = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
+                        this.HotelService = "Room Service | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ;
+                                                            
+
+                        this.PictureSelected = 'photo_hotelparis2_A.png';
+                        break;
+            case "Num Voltorme":
+                        this.PictureList = [{picture:'photo_hotelparis3_A.png'},
+                                            {picture:'photo_hotelparis3_B.png'},
+                                            {picture:'photo_hotelparis3_A.png'},
+                                            {picture:'photo_hotelparis3_B.png'},
+                                            {picture:'photo_hotelparis3_A.png'},
+                                            {picture:'photo_hotelparis3_B.png'},
+                                            ];
+                        this.HotelName = hotel,
+                        this.HotelPrice = "600";
+                        this.HotelDescription = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.";
+                        this.HotelService = "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ;
+                        this.PictureSelected = 'photo_hotelparis3_A.png';
+
+                        break;
+
+            //Cancun1 Hotels
+            
             case "Hyatt Zilara Cancun":
                         this.PictureList = [{picture:'photo_hotelcancun1_A.png'},
                         					{picture:'photo_hotelcancun1_B.png'},
@@ -26,7 +226,7 @@ export class Hotel {
                         					{picture:'photo_hotelcancun1_A.png'},
                         					{picture:'photo_hotelcancun1_B.png'},
                         															];
-                        this.HotelName = "Hyatt Zilara Cancun";
+                        this.HotelName = hotel;
                         this.HotelPrice = "89";
                         this.HotelDescription = "Prominently located on the widest stretch of beach in the heart of Cancun's Hotel Zone, Hyatt Zilara Cancun is an adults-only, all-suite, all inclusive resort where guests experience traditional Mexican warmth in an intimate yet casual setting.";
                         this.HotelService = "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry";
@@ -41,9 +241,9 @@ export class Hotel {
                         					{picture:'photo_hotelcancun2_B.png'},
                         					];
                         
-						this.HotelName = "Moon Palace Golf";
+						this.HotelName = hotel;
 						this.HotelPrice = "119";
-						this.HotelDescription = "Prominently located on the widest stretch of beach in the heart of Cancun's Hotel Zone, Hyatt Zilara Cancun is an adults-only, all-suite, all inclusive resort where guests experience traditional Mexican warmth in an intimate yet casual setting.";
+						this.HotelDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 						this.HotelService = "Room Service | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ;
                         									
 
@@ -57,13 +257,61 @@ export class Hotel {
                         					{picture:'photo_hotelcancun3_A.png'},
                         					{picture:'photo_hotelcancun3_B.png'},
                         					];
-						this.HotelName = "Live Aqua Cancun",
+						this.HotelName = hotel,
 						this.HotelPrice = "135";
-						this.HotelDescription = "Prominently located on the widest stretch of beach in the heart of Cancun's Hotel Zone, Hyatt Zilara Cancun is an adults-only, all-suite, all inclusive resort where guests experience traditional Mexican warmth in an intimate yet casual setting.";
+						this.HotelDescription = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
 						this.HotelService = "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ;
 						this.PictureSelected = 'photo_hotelcancun3_A.png';
-
 						break;
+
+            //Cancun2 Hotels
+
+            case "Hyulle Zombone Cancun":
+                        this.PictureList = [{picture:'photo_hotelcancun1_A.png'},
+                                            {picture:'photo_hotelcancun1_B.png'},
+                                            {picture:'photo_hotelcancun1_A.png'},
+                                            {picture:'photo_hotelcancun1_B.png'},
+                                            {picture:'photo_hotelcancun1_A.png'},
+                                            {picture:'photo_hotelcancun1_B.png'},
+                                                                                    ];
+                        this.HotelName = hotel;
+                        this.HotelPrice = "98";
+                        this.HotelDescription = "Prominently located on the widest stretch of beach in the heart of Cancun's Hotel Zone, Hyulle Zombone Cancun is an adults-only, all-suite, all inclusive resort where guests experience traditional Mexican warmth in an intimate yet casual setting.";
+                        this.HotelService = "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry";
+                        this.PictureSelected = "photo_hotelcancun1_A.png";                                         
+                        break;
+            case "Sun Castle Tennis":
+                        this.PictureList = [{picture:'photo_hotelcancun2_A.png'},
+                                            {picture:'photo_hotelcancun2_B.png'},
+                                            {picture:'photo_hotelcancun2_A.png'},
+                                            {picture:'photo_hotelcancun2_B.png'},
+                                            {picture:'photo_hotelcancun2_A.png'},
+                                            {picture:'photo_hotelcancun2_B.png'},
+                                            ];
+                        
+                        this.HotelName = hotel;
+                        this.HotelPrice = "191";
+                        this.HotelDescription ="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."; 
+                        this.HotelService = "Room Service | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ;
+                        this.PictureSelected = 'photo_hotelcancun2_A.png';
+                        break;
+            case "Streaming Ice Cancun":
+                        this.PictureList = [{picture:'photo_hotelcancun3_A.png'},
+                                            {picture:'photo_hotelcancun3_B.png'},
+                                            {picture:'photo_hotelcancun3_A.png'},
+                                            {picture:'photo_hotelcancun3_B.png'},
+                                            {picture:'photo_hotelcancun3_A.png'},
+                                            {picture:'photo_hotelcancun3_B.png'},
+                                            ];
+                        this.HotelName = hotel,
+                        this.HotelPrice = "153";
+                        this.HotelDescription = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
+                        this.HotelService = "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ;
+                        this.PictureSelected = 'photo_hotelcancun3_A.png';
+
+                        break;
+
+
 
         }
 

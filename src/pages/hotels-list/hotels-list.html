@@ -6,9 +6,9 @@
 			<img src="../../assets/bt_back.png">
 		</button>
 	</ion-buttons>
-			<b>Hotels-list</b>
+			<b>{{ citySelected }} Hotels</b>
 	<ion-buttons right no-padding>
-		<button ion-button icon-only (click)="back();">
+		<button ion-button icon-only (click)="maps();">
 			<ion-icon name="pin" class="white-icon"></ion-icon>
 	</button>
 	</ion-buttons>
@@ -17,18 +17,18 @@
 </ion-header>
 
 
-<ion-content no-padding style="background-color: white" [ngSwitch]="citySelected">
+<ion-content no-padding style="background-color: white">
 
 <!-- As each bar is unique to the hotel, a switchcase was used to show the proper bar -->
 
-	<ion-card *ngSwitchCase="'Cancun1'">
+	<ion-card>
 		<canvas #barCanvas> </canvas>
 	</ion-card>
 
 <!-- Creates the stack of cards leading to the hotel -->
 	<ion-card no-border *ngFor="let hotel of Hotels">
 	  	<ion-card-content no-padding (click)="goToHotelPage(hotel.hotelName)">
-		    <div style="margin: -5px; padding: 0px;"><img src="{{ hotel.image }}"/></div>
+		    <div style="margin: -5px; padding: 0px;"><img src="../../assets/{{ hotel.image }}"/></div>
 		    <div class="card-title">{{hotel.hotelName}}</div>
 		    <div class="card-subtitle">{{hotel.pricing}}</div>
 		</ion-card-content>
