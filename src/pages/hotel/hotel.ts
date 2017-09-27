@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController,NavParams, AlertController } from 'ionic-angular';
 import { Comments } from '../comments/comments'
+
 @Component({
   selector: 'page-hotel',
   templateUrl: 'hotel.html',

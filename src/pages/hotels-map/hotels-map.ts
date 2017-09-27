@@ -66,7 +66,7 @@ export class HotelsMap {
 		});
 
 		google.maps.event.addListener(marker, 'click', () => {
-		infoWindow.open(this.map, marker);
+			infoWindow.open(this.map, marker);
 		});
 
 	}
@@ -75,8 +75,8 @@ export class HotelsMap {
 	sendToHotel(marker, name){
 
 	google.maps.event.addListener(marker, 'dblclick', () => {
-	this.navCtrl.push(Hotel, name);
-	console.log(name);
+		this.navCtrl.push(Hotel, name);
+		console.log(name);
 	});
 	}
 
