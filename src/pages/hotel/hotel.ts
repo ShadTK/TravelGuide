@@ -14,6 +14,33 @@ export class Hotel {
 	HotelPrice: any;
 	HotelDescription: string;
 	HotelService: string;
+
+    populateVariables(
+        picture1: string,
+        picture2:string,
+        hotel:string, 
+        hotelPrice:string, 
+        hotelDescription:string,
+        hotelService:string,
+        pictureSelected:string
+        )
+    {
+
+            this.PictureList = [{picture:picture1},
+                                {picture:picture2},
+                                {picture:picture1},
+                                {picture:picture2},
+                                {picture:picture1},
+                                {picture:picture2},
+                               ];
+            this.HotelName = hotel;
+            this.HotelPrice = hotelPrice;
+            this.HotelDescription = hotelDescription;
+            this.HotelService = hotelService;
+            this.PictureSelected = pictureSelected;      
+
+    }
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
   	    let hotel = this.navParams.get('hotel');
@@ -24,98 +51,72 @@ export class Hotel {
             //Noronha1 Hotels
 
             case "Hotel da Palmeiras":
-                        this.PictureList = [{picture:'photo_hotelfernando1_A.png'},
-                                            {picture:'photo_hotelfernando1_B.png'},
-                                            {picture:'photo_hotelfernando1_A.png'},
-                                            {picture:'photo_hotelfernando1_B.png'},
-                                            {picture:'photo_hotelfernando1_A.png'},
-                                            {picture:'photo_hotelfernando1_B.png'},
-                                                                                    ];
-                        this.HotelName = hotel;
-                        this.HotelPrice = "89";
-                        this.HotelDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
-                        this.HotelService = "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry";
-                        this.PictureSelected = "photo_hotelfernando1_A.png";                                         
+                this.populateVariables(
+                    "photo_hotelfernando1_A.png", 
+                    "photo_hotelfernando1_B.png",
+                    hotel,
+                    "89",
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry", 
+                    "photo_hotelfernando1_A.png");                          
                         break;
             case "Hotel Royal dusxiq":
-                        this.PictureList = [{picture:'photo_hotelfernando2_A.png'},
-                                            {picture:'photo_hotelfernando2_B.png'},
-                                            {picture:'photo_hotelfernando2_A.png'},
-                                            {picture:'photo_hotelfernando2_B.png'},
-                                            {picture:'photo_hotelfernando2_A.png'},
-                                            {picture:'photo_hotelfernando2_B.png'},
-                                            ];
-                        
-                        this.HotelName = hotel;
-                        this.HotelPrice = "119";
-                        this.HotelDescription = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
-                        this.HotelService = "Room Service | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ;
-                                                            
-
-                        this.PictureSelected = 'photo_hotelfernando2_A.png';
+                        this.populateVariables(
+                        "photo_hotelfernando2_A.png",
+                        "photo_hotelfernando2_B.png",
+                        hotel,
+                        "119",
+                        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+                        "Room Service | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry",
+                        "photo_hotelfernando2_A.png",
+                        )                                                            
                         break;
             case "O bom da cama":
-                        this.PictureList = [{picture:'photo_hotelfernando3_A.png'},
-                                            {picture:'photo_hotelfernando3_B.png'},
-                                            {picture:'photo_hotelfernando3_A.png'},
-                                            {picture:'photo_hotelfernando3_B.png'},
-                                            {picture:'photo_hotelfernando3_A.png'},
-                                            {picture:'photo_hotelfernando3_B.png'},
-                                            ];
-                        this.HotelName = hotel,
-                        this.HotelPrice = "135";
-                        this.HotelDescription = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.";
-                        this.HotelService = "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ;
-                        this.PictureSelected = 'photo_hotelfernando3_A.png';
-
+                        this.populateVariables(
+                        "photo_hotelfernando3_A.png",
+                        "photo_hotelfernando3_B.png",
+                        hotel,
+                         "135",
+                         "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+                         "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry",
+                         'photo_hotelfernando3_A.png',
+                        )
                         break;
 
             //Noronha2 Hotels
 
             case "Eon Paganini":
-                        this.PictureList = [{picture:'photo_hotelfernando1_A.png'},
-                                            {picture:'photo_hotelfernando1_B.png'},
-                                            {picture:'photo_hotelfernando1_A.png'},
-                                            {picture:'photo_hotelfernando1_B.png'},
-                                            {picture:'photo_hotelfernando1_A.png'},
-                                            {picture:'photo_hotelfernando1_B.png'},
-                                                                                    ];
-                        this.HotelName = hotel;
-                        this.HotelPrice = "$100";
-                        this.HotelDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
-                        this.HotelService = "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry";
-                        this.PictureSelected = "photo_hotelfernando1_A.png";                                         
+                        this.populateVariables(
+                        'photo_hotelfernando1_A.png',
+                        'photo_hotelfernando1_B.png',                      
+                        hotel,
+                        "100",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                        "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry",
+                        "photo_hotelfernando1_A.png",
+                        )                                         
                         break;
             case "Varuna Hotel":
-                        this.PictureList = [{picture:'photo_hotelfernando2_A.png'},
-                                            {picture:'photo_hotelfernando2_B.png'},
-                                            {picture:'photo_hotelfernando2_A.png'},
-                                            {picture:'photo_hotelfernando2_B.png'},
-                                            {picture:'photo_hotelfernando2_A.png'},
-                                            {picture:'photo_hotelfernando2_B.png'},
-                                            ];
-                        
-                        this.HotelName = hotel;
-                        this.HotelPrice = "500";
-                        this.HotelDescription = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
-                        this.HotelService = "Room Service | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ;
-                                                            
-
-                        this.PictureSelected = 'photo_hotelfernando2_A.png';
+                        this.populateVariables(
+                        "photo_hotelfernando2_A.png",
+                        "photo_hotelfernando2_B.png",
+                        hotel,
+                        "500",
+                        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+                        "Room Service | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ,
+                        'photo_hotelfernando2_A.png',
+                        )
                         break;
             case "Parada do Corvo":
-                        this.PictureList = [{picture:'photo_hotelfernando3_A.png'},
-                                            {picture:'photo_hotelfernando3_B.png'},
-                                            {picture:'photo_hotelfernando3_A.png'},
-                                            {picture:'photo_hotelfernando3_B.png'},
-                                            {picture:'photo_hotelfernando3_A.png'},
-                                            {picture:'photo_hotelfernando3_B.png'},
-                                            ];
-                        this.HotelName = hotel,
-                        this.HotelPrice = "900";
-                        this.HotelDescription = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.";
-                        this.HotelService = "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ;
-                        this.PictureSelected = 'photo_hotelfernando3_A.png';
+                        this.populateVariables(
+                        "photo_hotelfernando3_B.png",
+                        "photo_hotelfernando3_A.png",
+                        hotel,
+                        "900",
+                        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+                        "Room Service | Free Parking | Free Breakfast | Dry Cleaning | Meeting Rooms | Laundry" ,
+                        'photo_hotelfernando3_A.png',
+                        )
 
                         break;
             //Paris1 Hotels
