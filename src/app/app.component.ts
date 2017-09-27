@@ -14,7 +14,7 @@ import { Comments } from '../pages/comments/comments';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = Comments;
+  rootPage:any = Hotel;
 
 constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
   platform.ready().then(() => {

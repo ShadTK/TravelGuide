@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController,NavParams, AlertController } from 'ionic-angular';
+import { Comments } from '../comments/comments'
 @Component({
   selector: 'page-hotel',
   templateUrl: 'hotel.html',
@@ -68,9 +69,16 @@ export class Hotel {
       
 	}
 
+   comments(){
+       this.navCtrl.push(Comments);
+   }
+
 	changeMainPicture(pictureName){
 		this.PictureSelected = pictureName;
 	}
+        back(){
+        this.navCtrl.pop();
+    };
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Hotel');

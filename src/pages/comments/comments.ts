@@ -29,4 +29,8 @@ export class Comments {
   	this.CommentTexts.push({date:d.toDateString(), text:JSON.stringify(value)});
   	console.log(this.CommentTexts);
   }
+      back(){
+        this.navCtrl.pop();
+    };
+
 }
