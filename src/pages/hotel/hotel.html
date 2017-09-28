@@ -2,13 +2,13 @@
 	<ion-toolbar>
 		<ion-buttons left no-padding>
 			<button ion-button icon-only (click)="back();">
-				<img src="../../assets/bt_back.png">
+				<img src="assets/bt_back.png">
 			</button>
 		</ion-buttons>
 			<b>Hotel</b>
 		<ion-buttons right no-padding>
 			<button ion-button icon-only (click)="comments();">
-				<img src = "../../assets/bt_comments.png">
+				<img src = "assets/bt_comments.png">
 			</button>
 		</ion-buttons>
 	</ion-toolbar>
@@ -16,19 +16,19 @@
 
 <ion-grid no-padding style="height: 100%;">
 	<ion-row class="main-picture" no-padding>
-		<img src="../../assets/{{PictureSelected}}">
+		<img width="100%" src="assets/{{PictureSelected}}">
 	</ion-row>
-	<ion-row style="height: 10%" >
+	<ion-row style="height: 50px" >
 		<ion-col col-2 *ngFor="let pictureList of PictureList" 
 		(click)="changeMainPicture(pictureList.picture)">
-			<img height="100%" src="../../assets/{{pictureList.picture}}"> 
+			<img height="50px" src="assets/{{pictureList.picture}}"> 
 		</ion-col>
 	</ion-row>
 	<ion-row style="padding-top: 3%"> 
 		<ion-col col-1>
 		</ion-col>
 		<ion-col col-8 class="hotel-name">
-			<img src="../../assets/stars.png"><br>
+			<img src="assets/stars.png"><br>
 			<b>{{HotelName}}</b>
 		</ion-col>
 		<ion-col col-2>

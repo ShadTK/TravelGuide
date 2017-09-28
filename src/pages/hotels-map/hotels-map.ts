@@ -93,7 +93,7 @@ export class HotelsMap {
 	addMarker(Latitude, Longitude, InfoContent, price){
 
 		var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-		var markerImage = '../../assets/pin_hotel.png';
+		var markerImage = 'assets/pin_hotel.png';
 
 		let marker = new google.maps.Marker({
 			map:this.map,

@@ -4,7 +4,7 @@ page-destination {
 	.slides{
 	    background-image: url("../assets/bg_login.png");
 		background-repeat: no-repeat;
-		background-size:contain;
+		background-size:cover;
 	     padding: 0;
 	  	 height: 100%;
 	}
@@ -39,7 +39,7 @@ page-destination {
 	}
 	/*Font information for travel type*/
 	.Beaches{
-		background-image: url(../../assets/bg_beaches.png);
+		background-image: url(../assets/bg_beaches.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		font-family:OpenSans;
@@ -52,7 +52,7 @@ page-destination {
 	}
 
 	.Romantic{
-		background-image: url(../../assets/bg_romantic.png);
+		background-image: url(../assets/bg_romantic.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		font-family:OpenSans;
@@ -64,7 +64,7 @@ page-destination {
 	}
 
 	.Paradise{
-		background-image: url(../../assets/bg_paradise.png);
+		background-image: url(../assets/bg_paradise.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		font-family:OpenSans;

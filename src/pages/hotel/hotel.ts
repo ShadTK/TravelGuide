@@ -15,31 +15,6 @@ export class Hotel {
 	HotelDescription: string;
 	HotelService: string;
 
-    populateVariables(
-        picture1: string,
-        picture2:string,
-        hotel:string, 
-        hotelPrice:string, 
-        hotelDescription:string,
-        hotelService:string,
-        pictureSelected:string
-        )
-    {
-
-            this.PictureList = [{picture:picture1},
-                                {picture:picture2},
-                                {picture:picture1},
-                                {picture:picture2},
-                                {picture:picture1},
-                                {picture:picture2},
-                               ];
-            this.HotelName = hotel;
-            this.HotelPrice = hotelPrice;
-            this.HotelDescription = hotelDescription;
-            this.HotelService = hotelService;
-            this.PictureSelected = pictureSelected;      
-
-    }
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
@@ -271,6 +246,32 @@ export class Hotel {
       
 	}
 
+
+    populateVariables(
+        picture1: string,
+        picture2:string,
+        hotel:string, 
+        hotelPrice:string, 
+        hotelDescription:string,
+        hotelService:string,
+        pictureSelected:string
+        )
+    {
+
+            this.PictureList = [{picture:picture1},
+                                {picture:picture2},
+                                {picture:picture1},
+                                {picture:picture2},
+                                {picture:picture1},
+                                {picture:picture2},
+                               ];
+            this.HotelName = hotel;
+            this.HotelPrice = hotelPrice;
+            this.HotelDescription = hotelDescription;
+            this.HotelService = hotelService;
+            this.PictureSelected = pictureSelected;      
+
+   }
    comments(){
        this.navCtrl.push(Comments);
    }
