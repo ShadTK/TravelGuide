@@ -46,6 +46,16 @@ it('is created', () => {
 	expect(fixture).toBeTruthy;
 	expect(comp).toBeTruthy;
 });
+ 
+
+it('Authenticates user if password is correct', () => {
+	let navCtrl = fixture.debugElement.injector.get(NavController);
+	spyOn(navCtrl, 'setRoot');
+
+	comp.login({user: "ibm", password: "123456" })
+	expect(navCtrl.setRoot).toHaveBeenCalledWith(Destination)
+
+});
 
 afterEach(() => {
 fixture.destroy();
