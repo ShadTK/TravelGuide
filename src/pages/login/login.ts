@@ -5,6 +5,7 @@ import { Destination } from '../destination/destination';
 
 @Component({
   selector: 'page-login',
+  providers: [AuthService],
   templateUrl: 'login.html'
 })
 export class Login {

@@ -53,7 +53,6 @@ export class Destination {
     }
 
     logout() {
-        this.authService.logout();
         this.navCtrl.setRoot(Login);
     };	    
 }
