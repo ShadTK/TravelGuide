@@ -1,19 +1,27 @@
-<!-- Logotype -->
 <ion-header class="app-title" no-border>
 	<ion-toolbar>
-		  	<ion-buttons left no-padding>
-		<button ion-button icon-only (click)="back();">
-			<img src="assets/bt_back.png">
-		</button>
-	</ion-buttons>
-			<b>{{ citySelected }} Hotels</b>
-	<ion-buttons right no-padding>
-		<button ion-button icon-only (click)="maps();">
-			<ion-icon name="pin" class="white-icon"></ion-icon>
-	</button>
-	</ion-buttons>
-	</ion-toolbar>
 
+		<!-- Back Button --> 
+	  	
+	  	<ion-buttons left no-padding>
+			<button ion-button icon-only (click)="back();">
+				<img src="assets/bt_back.png">
+			</button>
+		</ion-buttons>
+
+		<!-- Title --> 
+
+		<b>{{ citySelected }} Hotels</b>
+		
+		<!-- Maps Button-->
+
+		<ion-buttons right no-padding>
+			<button ion-button icon-only (click)="maps();">
+				<ion-icon name="pin" class="white-icon"></ion-icon>
+			</button>
+		</ion-buttons>
+
+	</ion-toolbar>
 </ion-header>
 
 
@@ -26,6 +34,7 @@
 	</ion-card>
 
 <!-- Creates the stack of cards leading to the hotel -->
+
 	<ion-card no-border *ngFor="let hotel of Hotels">
 	  	<ion-card-content no-padding (click)="goToHotelPage(hotel.hotelName)">
 		    <div style="margin: -5px; padding: 0px;"><img src="assets/{{ hotel.image }}"/></div>

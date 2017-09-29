@@ -10,56 +10,46 @@ import { HotelsList } from '../hotels-list//hotels-list';
 })
 export class Cities {
 
-        Destinations
+  Destinations: any ;
 
-//The below fix a glitch with sliders resizing.
-//For more information: https://github.com/ionic-team/ionic/issues/10101
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+        this.Destinations = this.navParams.get('destination');
+  }
+
+  //The below fix a glitch with sliders resizing.
+  //For more information: https://github.com/ionic-team/ionic/issues/10101
 
   @ViewChild(Slides) slides: Slides;
   
   public ionViewWillEnter() {
     this.slides.update();
-}
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-
-        this.Destinations = this.navParams.get('destination');
-
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CitiesBeaches');
-  }
+  selectCity(){
 
-ionSlideDidChange(){
-  console.log(this.slides.getActiveIndex())
-}
+  // Due to a glitch on the slider loop, the active index number may be different then the actual slide. 
+  // Case 3 occurs when you get to the first slide in the first loop. 
+  // Case 0 occurs when you go back to the last slide after the first loop.
 
-  back() {
-  	this.navCtrl.pop();
-  }
-
-    selectCity(){
-
-// Due to a glitch on the slider loop, the active index number may be different then the actual slide. Case 3 occurs when you get to the first slide in the first loop. case 0 Occurs when you go back to the last slide after the first loop.
-    switch(this.Destinations){
-    	case "Beaches":
-    	   switch(this.slides.getActiveIndex()) {
-    			case 0:
-    			    this.navCtrl.push(HotelsList, {city: 'Noronha2'});
-    			    break;
-    			case 1:
-    			    this.navCtrl.push(HotelsList, {city: 'Noronha1'});
-    			    break;
-    			case 2:
-    			    this.navCtrl.push(HotelsList, {city: 'Noronha2'});
-    			    break;
-    			case 3:
-    			    this.navCtrl.push(HotelsList, {city: 'Noronha1'});
-    			    break;
-		    }
-		    break;
-		case "Romantic":
-			switch(this.slides.getActiveIndex()) {
+  switch(this.Destinations){
+  	case "Beaches":
+  	   switch(this.slides.getActiveIndex()) {
+  			case 0:
+  			    this.navCtrl.push(HotelsList, {city: 'Noronha2'});
+  			    break;
+  			case 1:
+  			    this.navCtrl.push(HotelsList, {city: 'Noronha1'});
+  			    break;
+  			case 2:
+  			    this.navCtrl.push(HotelsList, {city: 'Noronha2'});
+  			    break;
+  			case 3:
+  			    this.navCtrl.push(HotelsList, {city: 'Noronha1'});
+  			    break;
+	    }
+	    break;
+  	case "Romantic":
+  		switch(this.slides.getActiveIndex()) {
     			case 0:
     			    this.navCtrl.push(HotelsList, {city: 'Paris2'});
     			    break;
@@ -72,10 +62,10 @@ ionSlideDidChange(){
     			case 3:
     			    this.navCtrl.push(HotelsList, {city: 'Paris2'});
     			    break;
-		    }
-		    break;
-		case "Paradise":
-			switch(this.slides.getActiveIndex()) {
+  	    }
+  	    break;
+  	case "Paradise":
+  		switch(this.slides.getActiveIndex()) {
     			case 0:
     			    this.navCtrl.push(HotelsList, {city: 'Cancun2'});
     			    break;
@@ -88,9 +78,13 @@ ionSlideDidChange(){
     			case 3:
     			    this.navCtrl.push(HotelsList, {city: 'Cancun1'});
     			    break;
-		    }
-		    break;
-		}
-	}
+  	    }
+	    break;
+  	}
+  }
+
+  back() {
+    this.navCtrl.pop();
+  }
 
 }

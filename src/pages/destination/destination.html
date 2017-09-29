@@ -1,12 +1,18 @@
-<!-- Logotype -->
 <ion-header class="app-title" no-border>
 	<ion-toolbar>
-		  	<ion-buttons left no-padding>
-		<button ion-button icon-only (click)="logout()">
-			<img src="assets/bt_back.png">
-		</button>
-	</ion-buttons>
-			<b>TRAVEL</b> GUIDE
+	
+	<!-- Back Button -->
+
+	  	<ion-buttons left no-padding>
+			<button ion-button icon-only (click)="logout()">
+				<img src="assets/bt_back.png">
+			</button>
+		</ion-buttons>
+
+	<!-- Title -->
+
+	<b>TRAVEL</b> GUIDE
+	
 	</ion-toolbar>
 </ion-header>
 
@@ -24,7 +30,7 @@
 		</ion-slide>
 </ion-slides>
 
-<!-- Button for selecting the city. alignment:center doesn't seem to work on ion-footer, so I had to use a grid. Seems a bit overkill, and I'm sure there are better solutions, but it will do for the time being.-->
+<!-- Button for selecting the city. -->
 
 <ion-footer no-border>
     <ion-grid>

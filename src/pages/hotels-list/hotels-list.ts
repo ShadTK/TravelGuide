@@ -18,12 +18,9 @@ export class HotelsList {
 	Hotels: {image:string, hotelName:string, pricing:string}[] = [];
 	names: any ;
 
-	goToHotelPage(hotelName){
-        this.navCtrl.push(Hotel, {hotel: hotelName});
-		console.log(hotelName);
-	}
-
 	constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+        //The below will pass the parameters to generate the page according to what city was selected previously
 
         this.citySelected = this.navParams.get('city');
         switch(this.citySelected){
@@ -36,8 +33,7 @@ export class HotelsList {
                         this.Hotels = [{image:'cel_fernandodenoronha1.png', hotelName:'Eon Paganini', pricing:'$100.00 per night'},
                                       {image:'cel_fernandodenoronha2.png', hotelName:"Varuna Hotel", pricing:"$500.00 per night"},
                                       {image:'cel_fernandodenoronha3.png', hotelName:"Parada do Corvo", pricing:"$900.00 per night"}];
-                        break;
-                    
+                        break;                    
             case "Paris1":
                         this.Hotels = [{image:'cel_hotelparis1.png', hotelName:'Caroussel Hotel', pricing:'$100.00 per night'},
                                       {image:'cel_hotelparis2.png', hotelName:"Canterlot Repouse", pricing:"$500.00 per night"},
@@ -61,17 +57,10 @@ export class HotelsList {
         }      
 	}
 
-    back(){
-        this.navCtrl.pop();
-    };
-
-    maps(){
-        this.navCtrl.push(HotelsMap, {city:this.citySelected});
-    };
-
 	ionViewDidLoad() {
 
 
+    //Loads the price chart with requested parameters
 
 		this.barChart = new Chart(this.barCanvas.nativeElement, {
  
@@ -95,7 +84,19 @@ export class HotelsList {
  
         });
 
-	console.log('ionViewDidLoad HotelsList');
-	}
+  	console.log('ionViewDidLoad HotelsList');
+  }
 
+  back(){
+      this.navCtrl.pop();
+  };
+
+  maps(){
+      this.navCtrl.push(HotelsMap, {city:this.citySelected});
+  };
+
+  goToHotelPage(hotelName){
+      this.navCtrl.push(Hotel, {hotel: hotelName});
+      console.log(hotelName);
+  }
 }

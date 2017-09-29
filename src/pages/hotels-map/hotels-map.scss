@@ -1,5 +1,5 @@
 page-hotels-map {
-
+	/*CSS Information for title and navbar */
 	.toolbar-background{
 		background-image: url("../assets/navbar.png");
 		background-repeat: no-repeat;
@@ -7,26 +7,28 @@ page-hotels-map {
 	    padding: 0;
 	  	height: 100%;
 	}
+
 	.white-icon{
 		color : white;
 	}
-	.app-title{
-	font-family:OpenSans-Semibold;
-	font-size:16.2px;
-	color:#ffffff;
-	line-height:22px;
-	text-align:center;
-	}
 
+	.app-title{
+		font-family:OpenSans-Semibold;
+		font-size:16.2px;
+		color:#ffffff;
+		line-height:22px;
+		text-align:center;
+	}
+	/* CSS information for the map */
 	.scroll {
         height: 100%
       }
  
-      #map {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
+	#map {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
 
 }

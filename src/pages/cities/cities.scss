@@ -1,11 +1,11 @@
 page-cities {
-/* CSS information for slide background color and Pager color*/
+	/* CSS information for slide background color and Pager color*/
 	.slides{
 	    background-image: url("../assets/bg_login.png");
 		background-repeat: no-repeat;
 		background-size:contain;
-	     padding: 0;
-	  	 height: 100%;
+	    padding: 0;
+	  	height: 100%;
 	}
 	.swiper-pagination-bullet-active {
 		opacity: 1;
@@ -13,11 +13,15 @@ page-cities {
 	.swiper-pagination-bullet {
 		background: white;
 	}
-	/*header style*/
+
+	/*header and footer style*/
+
 	.toolbar-background{
 		background-color: transparent;
 	}
+
 	/*Font information for Logo and Button*/
+
 	.app-title{
 		font-family:OpenSans-Semibold;
 		font-size:16.2px;
@@ -25,6 +29,7 @@ page-cities {
 		line-height:22px;
 		text-align:center;
 	}
+	
 	.app-bottom{
 		font-family:OpenSans;
 		font-size:12.79px;
@@ -35,7 +40,9 @@ page-cities {
 		padding-bottom: 10%;
 		align-items: center;
 	}
+
 	/*Font information for travel type*/
+	
 	.Noronha1{
 		background-image: url(../assets/bg_fernandodenoronha1.png);
 		background-repeat: no-repeat;
@@ -60,6 +67,7 @@ page-cities {
 		padding-top: 90%;
 		text-align:left;
 	}
+
 	.Cancun1{
 		background-image: url(../assets/bg_cancun1.png);
 		background-repeat: no-repeat;
@@ -84,6 +92,7 @@ page-cities {
 		padding-top: 90%;
 		text-align:left;
 	}
+
 	.Paris1{
 		background-image: url(../assets/bg_paris1.png);
 		background-repeat: no-repeat;

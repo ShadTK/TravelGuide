@@ -13,43 +13,39 @@ import { Cities } from '../cities/cities'
 })
 export class Destination {
 
-
-
-
-
-
-    constructor(public navCtrl: NavController,
-        			  public navParams: NavParams,
-        			  public authService: AuthService,
-        			  public alertCtrl: AlertController) {
-	}
-
 //The below fix a glitch with sliders resizing.
 //For more information: https://github.com/ionic-team/ionic/issues/10101
-  @ViewChild(Slides) slides: Slides;
+    
+    @ViewChild(Slides) slides: Slides;
   
-  public ionViewWillEnter() {
-    this.slides.update();
-}
-      
+    public ionViewWillEnter() {
+        this.slides.update();
+    }
+
+    constructor(public navCtrl: NavController) {
+	}
+
+//Depending on which slide is active, a different flag will be sent to the Cities page 
+//for proper population of variables.
+
     selectCity(){
-      switch(this.slides.getActiveIndex()) {
-    case 0: 
-        this.navCtrl.push(Cities, {destination: 'Paradise'});
-        break;
-    case 1:
-        this.navCtrl.push(Cities, {destination: 'Beaches'});
-        break;
-    case 2:
-        this.navCtrl.push(Cities, {destination: 'Romantic'});
-        break;
-    case 3:
-        this.navCtrl.push(Cities, {destination: 'Paradise'});
-        break;
-    case 4:
-        this.navCtrl.push(Cities, {destination: 'Beaches'})
-        break;
-}
+        switch(this.slides.getActiveIndex()) {
+            case 0: 
+                this.navCtrl.push(Cities, {destination: 'Paradise'});
+                break;
+            case 1:
+                this.navCtrl.push(Cities, {destination: 'Beaches'});
+                break;
+            case 2:
+                this.navCtrl.push(Cities, {destination: 'Romantic'});
+                break;
+            case 3:
+                this.navCtrl.push(Cities, {destination: 'Paradise'});
+                break;
+            case 4:
+                this.navCtrl.push(Cities, {destination: 'Beaches'})
+                break;
+        }
     }
 
     logout() {

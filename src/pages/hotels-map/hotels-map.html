@@ -1,19 +1,23 @@
 <ion-header class="app-title" no-border>
 	<ion-toolbar>
+		
 		<ion-buttons left no-padding>
 			<button ion-button icon-only (click)="back();">
 				<img src="assets/bt_back.png">
 			</button>
 		</ion-buttons>
+
 			<b>{{citySelected}} Hotels</b>
+		
 		<ion-buttons right no-padding>
 			<button ion-button icon-only>
 				<ion-icon name="list" class="white-icon"></ion-icon>
 			</button>
 		</ion-buttons>
+
 	</ion-toolbar>
 </ion-header>
 
 <ion-content>
-<div #map id="map"></div>
+	<div #map id="map"></div>
 </ion-content>

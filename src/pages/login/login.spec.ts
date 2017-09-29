@@ -10,7 +10,6 @@ import { AuthMock } from '../../mocks'
 import { Destination } from  '../destination/destination'
 import { LoadingController } from 'ionic-angular';
 import { LoadingControllerMock } from '../../mocks';
-
 import { Login } from './login';
 
   let de: DebugElement;

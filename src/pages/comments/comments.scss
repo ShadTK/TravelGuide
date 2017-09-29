@@ -1,5 +1,5 @@
 page-comments {
-
+	/*Header Styles and Images*/
 	.toolbar-background{
 		background-image: url("../assets/navbar.png");
 		background-repeat: no-repeat;
@@ -17,6 +17,9 @@ page-comments {
 		line-height:22px;
 		text-align:center;
 	}
+
+	/*Comment section styles*/
+	
 	.comment-style{
 		background-color: transparent;
 		border: none;

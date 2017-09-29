@@ -7,13 +7,15 @@ page-hotel {
 		color : white;
 	}
 	.app-title{
-	font-family:OpenSans-Semibold;
-	font-size:16.2px;
-	color:#ffffff;
-	line-height:22px;
-	text-align:center;
+		font-family:OpenSans-Semibold;
+		font-size:16.2px;
+		color:#ffffff;
+		line-height:22px;
+		text-align:center;
 	}
 
+	/*Styles concerning the body and hotel description*/
+	
 	.description{
 		font-family:OpenSans;
 		font-size:11.94px;
@@ -34,14 +36,15 @@ page-hotel {
     	flex-wrap: wrap;
 	}
 
-	.pricing1 {
+	.pricing-number {
 		font-family:OpenSans-Semibold;
 		font-size:20.5px;
 		color:#535353;
 		letter-spacing:0.24px;
 		text-align:center;
 	}
-	.pricing2 {
+
+	.pricing-text {
 		font-family:OpenSans-Light;
 		font-size:10.23px;
 		color:#535353;
@@ -70,13 +73,15 @@ page-hotel {
 			color: #404040;
 		}
 	}
+
 	.main-picture{
 		height:35%;
 	}
 
+	/*Break line was not appearing properly, so this CSS is required in order to render it*/
 	hr {
-  	border: 1px solid #e8e8e8 !important;
-  	width: 82% !important;
+	  	border: 1px solid #e8e8e8 !important;
+	  	width: 82% !important;
     }
 
 }
